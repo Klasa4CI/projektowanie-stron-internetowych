@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio na stronie</title>
+</head>
+<body>
+    <script>
+        function playAudio(){
+            console.log('[LOG] Audio played.')
+            document.getElementById('player').play();
+        }
+        function pauseAudio(){
+            console.log('[LOG] Audio paused.')
+            document.getElementById('player').pause();
+        }
+        function levelChange(char){
+            if(char === 'plus'){
+                console.log(`[LOG] Audio level changed from ${document.getElementById('player').volume} to ${document.getElementById('player').volume + 0.1}.`)
+                document.getElementById('player').volume += 0.1
+            } else {
+                console.log(`[LOG] Audio level changed from ${document.getElementById('player').volume} to ${document.getElementById('player').volume - 0.1}.`)
+                document.getElementById('player').volume -= 0.1
+            }
+        }
+    </script>
+    <header>
+        <img src="logo.svg" style="float:left;margin-right:25px;"></img><h1>Dżwięki dzisiaj tutaj gramy, śmietana z reklamy</h1>
+    </header>
+    top 10 plikuw ałdio:
+    <audio id="player" src="audio.mp3"></audio>
+    <div> 
+      <button onclick="playAudio()">Play</button> 
+      <button onclick="pauseAudio()">Pause</button> 
+      <button onclick="levelChange('plus')">Vol +</button> 
+      <button onclick="levelChange('minus')">Vol -</button> 
+    </div>
+</body>
+</html>
