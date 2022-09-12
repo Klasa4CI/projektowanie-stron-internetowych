@@ -1,33 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dźwięki</title>
-    <meta name="description" content="Audacity Bass i Sopran Funkcja zbierane dla wszystkich zainteresowanych. Dzięki temu będziemy mogli zaprezentować wiele nowych utworów.">
+    <meta name="description" content="Audacity Bass i Sopran Funkcja zbierane dla wszystkich zainteresowanych. Dzięki temu będziemy mogli zaprezentować wiele nowych utworów. Bass i Sopran pozwalają nam na przetworzenie dźwięku w specyficzny sposób!">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: blue;
+            color: white;
+            place-items: center;
+            align-items: center;
+            place-content: center;
+        }
+        h1 {
+            text-align: center;
+            font-size: 72px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bas i sopran</h1>
-    <h3>Bass (dB)</h3>
-    <p>Wielkość wzmocnienia (wzmocnienie powyżej 0 dB lub tłumienie poniżej 0 dB) do niskich (niskich) częstotliwości. Ustaw wartość dodatnią, aby wzmocnić basy, lub ujemną, aby zredukować basy. Wzmocnienie basów jest stosowane do częstotliwości niższych niż 1000 Hz, przy czym największe wzmocnienie dotyczy częstotliwości około 100 Hz lub niższych.</p>
-    <h3>Sopran (dB)</h3>
-    <p>Wielkość wzmocnienia (wzmocnienie powyżej 0 dB lub tłumienie poniżej 0 dB) do częstotliwości wysokich (wysokich). Ustaw to na wartość dodatnią, aby wzmocnić tony wysokie, lub na wartość ujemną, aby zmniejszyć tony wysokie. Wzmocnienie wysokich tonów jest stosowane do częstotliwości wyższych niż 1000 Hz, przy czym największe wzmocnienie stosuje się do częstotliwości powyżej 10 000 Hz.</p>
-    <h3>Głośność (dB)</h3>
-    <p>Zwiększa to lub zmniejsza ogólny poziom nawet o +/- 30 dB.</p>
+    <main>
+        <header>
+            <h1>Bas i sopran</h1>
+            <img alt="Bas i sopran" src="https://static.wixstatic.com/media/37ae02_e32a272cb34343868da6f87905813d78~mv2.png/v1/fill/w_586,h_199,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7.png" />
+        </header>
+        <h3>Bass (dB)</h3>
+        <p>Wielkość wzmocnienia (wzmocnienie powyżej 0 dB lub tłumienie poniżej 0 dB) do niskich (niskich) częstotliwości. Ustaw wartość dodatnią, aby wzmocnić basy, lub ujemną, aby zredukować basy. Wzmocnienie basów jest stosowane do częstotliwości niższych niż 1000 Hz, przy czym największe wzmocnienie dotyczy częstotliwości około 100 Hz lub niższych.</p>
+        <h3>Sopran (dB)</h3>
+        <p>Wielkość wzmocnienia (wzmocnienie powyżej 0 dB lub tłumienie poniżej 0 dB) do częstotliwości wysokich (wysokich). Ustaw to na wartość dodatnią, aby wzmocnić tony wysokie, lub na wartość ujemną, aby zmniejszyć tony wysokie. Wzmocnienie wysokich tonów jest stosowane do częstotliwości wyższych niż 1000 Hz, przy czym największe wzmocnienie stosuje się do częstotliwości powyżej 10 000 Hz.</p>
+        <h3>Głośność (dB)</h3>
+        <p>Zwiększa to lub zmniejsza ogólny poziom nawet o +/- 30 dB.</p>
+            <ul>
+                <li>Podbicie basów lub tonów wysokich będzie miało tendencję do zwiększania ogólnego poziomu. W efekcie końcowy poziom może być podniesiony tak wysoko, że zniekształca się (przycina). Aby uniknąć przycinania, zmniejsz poziom, zmniejszając głośność.</li>
+                <li>Zmniejszenie tonów niskich lub wysokich może sprawić, że końcowy poziom będzie zbyt cichy. Aby skompensować niższy poziom, ustaw wyższy poziom głośności.</li>
+            </ul>
+        <h3>Szczegóły techniczne</h3>
+        <p>Bass and Sopran to dwuzakresowy korektor.
+        </p>
         <ul>
-            <li>Podbicie basów lub tonów wysokich będzie miało tendencję do zwiększania ogólnego poziomu. W efekcie końcowy poziom może być podniesiony tak wysoko, że zniekształca się (przycina). Aby uniknąć przycinania, zmniejsz poziom, zmniejszając głośność.</li>
-            <li>Zmniejszenie tonów niskich lub wysokich może sprawić, że końcowy poziom będzie zbyt cichy. Aby skompensować niższy poziom, ustaw wyższy poziom głośności.</li>
+            <li>Pokrętło Bass to filtr niskopółkowy z częstotliwością półwzmocnienia przy 250 Hz.</li>
+            <li>Pokrętło Treble to filtr wysokiej półki z częstotliwością połowicznego wzmocnienia przy 4000 Hz.</li>
+            <li>Wszystkie suwaki mają zakres wzmocnienia +/- 30 dB.</li>
         </ul>
-    <h3>Połącz regulację głośności z kontrolkami tonów</h3>
-    <p>When this is enabled (checked), adjusting either the Bass or Treble controls will automatically adjust the Volume control so as to lessen the change in the resulting output level approximately the same.</p>
-    <h3>Szczegóły techniczne</h3>
-    <p>Bass and Treble is a two-band Equalizer.
-    </p>
-    <ul>
-        <li>The Bass control is a low-shelf filter with the half gain frequency at 250 Hz.</li>
-        <li>The Treble control is a high-shelf filter with the half gain frequency at 4,000 Hz.</li>
-        <li>All slider controls have a gain range of +/- 30 dB.</li>
-    </ul>
+    </main>
 </body>
 </html>
